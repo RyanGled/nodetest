@@ -5,7 +5,7 @@ var Q    = require('q');
 function sleep(millis) {
   var deferredResult = Q.defer();
   setTimeout(function() {
-    deferredResult.resolve();
+      deferredResult.resolve();
   }, millis);
   return deferredResult.promise;
 };
